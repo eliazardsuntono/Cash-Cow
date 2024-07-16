@@ -9,5 +9,9 @@ https://nodejs.org/en/download/package-manager
 
 ## To Run:
 ```
-npx expo start
+npm run web
+```
+## If an error for too many files opens then download watchman:
+```
+sudo apt install watchman
 ```
