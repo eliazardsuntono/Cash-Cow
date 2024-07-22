@@ -15,9 +15,9 @@ npm run
 ## If an error for too many files opens then download watchman:
 ```
 sudo apt install watchman
-``
+```
 
-To Run Backend:
+## To Run Backend:
 ```
 node index.js
 ```
