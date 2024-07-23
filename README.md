@@ -9,8 +9,8 @@ https://nodejs.org/en/download/package-manager
 
 ## To Run Frontend:
 ```
-cd cashcow
-npm run
+cd CashCow
+npm run dev
 ```
 ## If an error for too many files opens then download watchman:
 ```
