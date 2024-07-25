@@ -1,5 +1,4 @@
 import {useEffect, useState} from 'react'
-import reactLogo from './assets/react.svg'
 import axios from "axios";
 import {usePlaidLink} from "react-plaid-link";
 // import './App.css'
