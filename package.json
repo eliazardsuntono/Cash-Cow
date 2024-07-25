@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-plaid-link": "^3.5.2",
+    "vite": "^5.3.4"
+  }
+}
