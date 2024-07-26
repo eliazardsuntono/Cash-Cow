@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import LoanForm from "./Loan.jsx";
+import LoanPage from "./Loan.jsx";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <LoanForm />
+    <div className="min-h-screen bg-backgroundGreen">
+      <LoanPage />
+    </div>
   </React.StrictMode>
 );
