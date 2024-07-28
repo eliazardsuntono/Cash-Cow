@@ -1,0 +1,31 @@
+.navbar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #63d471;
+    text-align: center;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column; /* Align icon and text vertically if needed */
+    align-items: center; /* Center the icon and text */
+  }
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%; /* Ensure it takes full width */
+}
