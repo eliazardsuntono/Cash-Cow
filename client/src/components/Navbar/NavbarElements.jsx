@@ -6,16 +6,17 @@ export const Nav = styled.nav`
   background: #63d471;
   height: 85px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0.2rem calc((100vw - 1000px) / 2);
   z-index: 12;
+  width: 100vw;
   /* Third Nav */
-  /* justify-content: flex-start; */
 `;
 
 export const NavLink = styled(Link)`
   color: #808080;
   display: flex;
+  width: 70px;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
