@@ -29,15 +29,11 @@ export default function Dashboard (){
     }
 
     return (
-        <div>
-            <h1>Dashboard</h1>
-            <p>User: {user}</p>
-            <p>Credit Loans: {creditLoans}</p>
-            <p>Student Loans Left: {studentLoansLeft}</p>
-            <p>Total Student Loans: {totalStudentLoans}</p>
-            <p>Income: {income}</p>
-            <p>Student Loan Interest: {studentLoanInterest}</p>
-            <p>Credit Loan Interest: {creditLoanInterest}</p>
+        <div className={styles.container}>
+           <div className={styles.titleContainer}>
+                <h1 className={styles.dashboardTitle}>Dashboard</h1>
+            </div>
+            <div className={styles.balanceContainer}> hello</div>
         </div>
     );
 }
