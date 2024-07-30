@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 var express = require("express");
 var cors = require("cors");
 var bodyParser = require("body-parser");
@@ -7,9 +9,11 @@ var app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+redis_url = process.env.REDIS_URL
+
 const RedisStore = require("connect-redis").default;
 var client = redis.createClient({
-    url : "rediss://default:AdpIAAIncDE4OGVhZmY0ZTczMjY0NjI4YjZjNzU5NTk3M2JhNmQ2OXAxNTU4ODA@exciting-cougar-55880.upstash.io:6379"
+    url : process.env.REDIS_URL
 });
 
 (async () => { await client.connect(); })();
