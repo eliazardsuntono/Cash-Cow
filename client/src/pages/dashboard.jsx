@@ -33,6 +33,7 @@ export default function Dashboard (){
            <div className={styles.titleContainer}>
                 <h1 className={styles.dashboardTitle}>Dashboard</h1>
             </div>
+            <div className={styles.balanceContainer}> hello</div>
         </div>
     );
 }
