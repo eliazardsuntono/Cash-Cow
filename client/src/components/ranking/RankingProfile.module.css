@@ -21,7 +21,7 @@
 .profileContainer {
   margin: 28px 10% 0px;
   max-height: 125px;
-  max-width: 335px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
