@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "nunito_sansbold";
+  src: url("../../fonts/Nunito-Sans/webfontkit-20240730-225424/nunitosans-bold-webfont.woff2")
+      format("woff2"),
+    url("../../fonts/Nunito-Sans/webfontkit-20240730-225424/nunitosans-bold-webfont.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nunito_sansregular";
+  src: url("../../fonts/Nunito-Sans/webfontkit-20240730-225424/nunitosans-regular-webfont.woff2")
+      format("woff2"),
+    url("../../fonts/Nunito-Sans/webfontkit-20240730-225424/nunitosans-regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.profileContainer {
+  margin: 28px 10% 0px;
+  max-height: 120px;
+  max-width: 335px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #aeaeae;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.progressContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.6875rem;
+}
+
+.header {
+  margin-left: 9px;
+  font-family: "nunito_sansbold", serif;
+  font-size: 24px;
+  color: #000000;
+}
+
+.profileName {
+  font-family: "nunito_sansregular", serif;
+  color: #000000;
+  font-size: 20px;
+}
