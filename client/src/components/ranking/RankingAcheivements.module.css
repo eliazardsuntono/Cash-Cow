@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "nunito_sanslight";
+  src: url("../../fonts/Nunito-Sans/light/nunitosans-light-webfont.woff2")
+      format("woff2"),
+    url("../../fonts/Nunito-Sans/light/nunitosans-light-webfont.woff")
+      format("woff");
+  font-weight: light;
+  font-style: normal;
+}
+
+.container {
+  max-width: 300px;
+  max-height: 180px;
+  padding: 12px;
+  margin: 0px 10%;
+  border: 1px solid #aeaeae;
+  border-radius: 10px;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -10px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.acheivementHeader {
+  font-family: "nunito_sansbold", serif;
+  font-size: 1.3rem;
+  color: #000000;
+}
+
+.iconDescription {
+  font-size: 0.875rem;
+  font-family: "nunito_sanslight";
+  color: #aeaeae;
+}
+
+.legend {
+  margin-bottom: -25px;
+}
