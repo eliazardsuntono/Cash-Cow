@@ -1,9 +1,6 @@
 import styles from "./rankings.module.css";
+import RankingHeader from "./../components/ranking/RankingHeader";
 
-export default function Rankings(){
-    return (
-        <div>
-            <h1>Rankings</h1>
-        </div>
-    );
+export default function Rankings() {
+  return <RankingHeader />;
 }
