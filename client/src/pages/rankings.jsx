@@ -5,7 +5,7 @@ import RankingAcheivements from "../components/ranking/RankingAcheivments";
 
 export default function Rankings() {
   return (
-    <div>
+    <div className={styles.container}>
       <RankingHeader />
       <RankingProfile />
       <RankingAcheivements />
