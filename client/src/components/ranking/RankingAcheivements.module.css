@@ -9,7 +9,7 @@
 }
 
 .container {
-  width: 300px;
+  max-width: 300px;
   max-height: 180px;
   padding: 12px;
   margin: 0px 10%;
