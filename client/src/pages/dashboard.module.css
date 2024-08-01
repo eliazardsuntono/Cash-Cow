@@ -1,33 +1,9 @@
-.container {
+.container{
+    padding-top: 25%;
     display: flex;
     flex-direction: column;
+    top: 0;
     align-items: center;
     justify-content: center;
-    
 }
 
-.titleContainer {
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    position: fixed;
-    background-color: #33914C;
-    width: 100%;
-}
-
-.dashboardTitle {
-    padding-top: 30%;
-    font-family: 'Poppins', sans-serif;
-    color: #F9F9F9;
-}
-
-.balanceContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-}
-
-.currentBalance{
-    color: black;
-}

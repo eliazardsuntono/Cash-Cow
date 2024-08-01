@@ -1,0 +1,22 @@
+.container{
+    margin: 28px 10% 0px;
+    max-height: 250px;
+    max-width: 335px;
+    height: 175px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #aeaeae;
+    border-radius: 10px;
+    padding-bottom: 36px;
+}
+
+.seperator{
+    background-color: black;
+}
+
+.title{
+    font-family: 'Poppins', sans-serif;
+
+}
