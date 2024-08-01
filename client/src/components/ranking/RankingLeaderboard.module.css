@@ -1,0 +1,21 @@
+.user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userRight {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  align-items: center;
+}
+
+.userName {
+  margin-left: 2px;
+}
+
+.one {
+  height: 50%;
+}

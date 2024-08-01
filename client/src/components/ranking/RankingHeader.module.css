@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "poppinsbold";
+  src: url("../../fonts/Poppins/webfontkit-20240730-213845/poppins-bold.woff2")
+      format("woff2"),
+    url("../../fonts/Poppins/webfontkit-20240730-213845/poppins-bold.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.header {
+  width: 100vw;
+  background-color: #33914c;
+  display: flex;
+  height: 118px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.headerText {
+  color: #f9f9f9;
+  font-size: 2rem;
+  font-family: "poppinsbold", serif;
+  letter-spacing: -2%;
+  line-height: 118.9%;
+}
