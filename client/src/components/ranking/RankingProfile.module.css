@@ -20,6 +20,7 @@
 
 .profileContainer {
   margin: 28px 10% 0px;
+  margin-top: 118px;
   max-height: 125px;
   max-width: 80%;
   display: flex;
@@ -28,6 +29,10 @@
   border: 1px solid #aeaeae;
   border-radius: 10px;
   padding-bottom: 36px;
+
+  @media screen and (min-height: 853px) {
+    margin-top: 150px;
+  }
 }
 
 .progressContainer {

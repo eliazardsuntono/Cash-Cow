@@ -15,6 +15,7 @@
   height: 118px;
   justify-content: center;
   align-items: flex-end;
+  position: fixed;
 }
 
 .headerText {
@@ -23,4 +24,6 @@
   font-family: "poppinsbold", serif;
   letter-spacing: -2%;
   line-height: 118.9%;
+  position: sticky;
+  top: 0px;
 }

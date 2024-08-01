@@ -1,21 +1,55 @@
+.container {
+  max-width: 80%;
+  border: 1px solid #aeaeae;
+  margin: 0 10%;
+  border-radius: 10px;
+  margin-bottom: 125px;
+}
+
 .user {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border: none;
+  border-radius: 13px;
 }
 
-.userRight {
+.userLeft {
   display: flex;
   flex-direction: row;
   gap: 7px;
   align-items: center;
+  margin-left: 4px;
+}
+
+.userRight {
+  margin-right: 10px;
 }
 
 .userName {
   margin-left: 2px;
 }
 
-.one {
+.leaderboardRanking {
   height: 50%;
+}
+
+.rankContainer {
+  margin-top: -15px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.one {
+  background-color: #f2fcfb;
+}
+
+.two {
+  background-color: #f2f2fc;
+}
+
+.three {
+  background-color: #fcf2f2;
 }
