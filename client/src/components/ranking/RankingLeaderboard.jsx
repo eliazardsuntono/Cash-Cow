@@ -25,7 +25,11 @@ const User1Rank = () => {
   return (
     <div className={styles.user}>
       <div className={styles.userRight}>
-        <img src={one} alt="An icon of the number one" className={styles.one} />
+        <img
+          src={styles.rankingPhoto}
+          alt="An icon of the number one"
+          className={styles.one}
+        />
         <ProfilePicture />
         <p className={styles.userName}>Mario Luigi</p>
       </div>
