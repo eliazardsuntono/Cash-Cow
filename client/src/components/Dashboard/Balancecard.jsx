@@ -11,13 +11,24 @@ const Balanceheader = () => {
 const BalanceInfo = () => {
     return(
         <div className={styles.balanceInfoContainer}>
-            <p>Your current balance across all banks</p>
-            <h3>$5,320</h3>
-            <div>
-
+            <p className={styles.description}>Your current balance across all banks</p>
+            <h3 className={styles.currentBalance}>$5,320</h3>
+            <div className={styles.remainingContainer}>
+                <p className={styles.remainingStatement}>Left to spend this month</p>
+                <span className={styles.amountLeft}>$650</span>
             </div>
         </div>
     );
+}
+
+const ViewButton = () => {
+    return(
+        <div className={styles.buttonContainer}>
+            <button className={styles.viewButton}>
+                <p className={styles.buttonContent}>View Bank Statements</p>
+            </button>
+        </div>
+    )
 }
 
 export default function Balancecard(){
@@ -25,6 +36,7 @@ export default function Balancecard(){
         <fieldset className={styles.container}>
             <Balanceheader />
             <BalanceInfo />
+            <ViewButton />
         </fieldset>
     )
 }

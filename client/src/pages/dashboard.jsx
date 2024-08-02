@@ -37,6 +37,7 @@ export default function Dashboard (){
             <Dashboardheader />
             <div className={styles.container}>
                 <Balancecard />
+                <Cashflow />
             </div>
         </div>
     );
