@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Dashboardheader from '../components/Dashboard/Dashboardheader';
 import Balancecard from '../components/Dashboard/Balancecard';
+import Cashflow from '../components/Dashboard/Cashflow';
 
 export default function Dashboard (){
     const [user, setUser] = useState();
@@ -35,7 +36,6 @@ export default function Dashboard (){
         <div>
             <Dashboardheader />
             <div className={styles.container}>
-                <div className={styles.seperator}></div>
                 <Balancecard />
             </div>
         </div>

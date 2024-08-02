@@ -8,7 +8,7 @@ import star from "../../assets/leaderboard/star.png";
 const LeaderboardHeader = () => {
   return (
     <legend>
-      <h3>Leaderboard</h3>
+      <h3 className={styles.legendHeader}>Leaderboard</h3>
     </legend>
   );
 };
@@ -18,17 +18,19 @@ const ProfilePicture = () => {
 };
 
 const Crown = () => {
-  return <img src={star} alt="An icon a of crown" />;
+  return (
+    <img src={star} alt="An icon a of crown" className={styles.userRight} />
+  );
 };
 
 const User1Rank = () => {
   return (
-    <div className={styles.user}>
-      <div className={styles.userRight}>
+    <div className={`${styles.user} ${styles.one}`}>
+      <div className={styles.userLeft}>
         <img
-          src={styles.rankingPhoto}
+          src={one}
           alt="An icon of the number one"
-          className={styles.one}
+          className={styles.leadboardRanking}
         />
         <ProfilePicture />
         <p className={styles.userName}>Mario Luigi</p>
@@ -40,11 +42,53 @@ const User1Rank = () => {
   );
 };
 
+const User2Rank = () => {
+  return (
+    <div className={`${styles.user} ${styles.two}`}>
+      <div className={styles.userLeft}>
+        <img
+          src={two}
+          alt="An icon of the number two"
+          className={styles.leadboardRanking}
+        />
+        <ProfilePicture />
+        <p className={styles.userName}>Amadin Ahmed</p>
+      </div>
+      <div>
+        <Crown />
+      </div>
+    </div>
+  );
+};
+
+const User3Rank = () => {
+  return (
+    <div className={`${styles.user} ${styles.three}`}>
+      <div className={styles.userLeft}>
+        <img
+          src={three}
+          alt="An icon of the number three"
+          className={styles.leadboardRanking}
+        />
+        <ProfilePicture />
+        <p className={styles.userName}>Amadin Ahmed</p>
+      </div>
+      <div>
+        <Crown />
+      </div>
+    </div>
+  );
+};
+
 const Leaderboard = () => {
   return (
-    <fieldset>
+    <fieldset className={styles.container}>
       <LeaderboardHeader />
-      <User1Rank />
+      <div className={styles.rankContainer}>
+        <User1Rank />
+        <User2Rank />
+        <User3Rank />
+      </div>
     </fieldset>
   );
 };

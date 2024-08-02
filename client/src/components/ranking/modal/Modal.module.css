@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "nunito_sansbold";
+  src: url("../../../fonts/Nunito-Sans/boldregular/nunitosans-bold-webfont.woff2")
+      format("woff2"),
+    url("../../../fonts/Nunito-Sans/boldregular/nunitosans-bold-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nunito_sansregular";
+  src: url("../../../fonts/Nunito-Sans/boldregular/nunitosans-regular-webfont.woff2")
+      format("woff2"),
+    url("../../../fonts/Nunito-Sans/boldregular/nunitosans-regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(174, 174, 174, 0.3);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "nunito_sansregular";
+  font-size: 0.9rem;
+}
+
+.innerModal {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #000000;
+  margin: 0 6%;
+}
+
+.modalButton {
+  place-self: end;
+  border: none;
+  background: none;
+}
+
+.modalHeader {
+  font-family: "nunito_sansbold", serif;
+  font-size: 1.3rem;
+}
+
+.background {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 12px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rowDescription {
+  display: flex;
+  flex-direction: row;
+  text-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.acheivementImage {
+  height: 50%;
+}
+
+.blueText {
+  color: #5edec3;
+  font-family: "nunito_sansbold";
+}
+
+.darkBlueText {
+  color: #615ede;
+  font-family: "nunito_sansbold";
+}
+
+.redText {
+  color: #de5e5e;
+  font-family: "nunito_sansbold";
+}
