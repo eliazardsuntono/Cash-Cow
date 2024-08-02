@@ -1,0 +1,33 @@
+import React from "react";
+import styles from "./Modal.module.css";
+import { X } from "lucide-react";
+import acheivement1 from "../../../assets/acheivement1.png";
+
+const Modal = () => {
+  return (
+    <div className={styles.modal}>
+      <div className={styles.innerModal}>
+        <button className={styles.modalButton}>
+          <X size={30}></X>
+        </button>
+        <div className={styles.background}>
+          <h3>Acheivement</h3>
+          <div className={styles.rowDescription}>
+            <img
+              src={acheivement1}
+              alt="A blue dollar sign icon"
+              className={styles.acheivementImage}
+            />
+            <p>
+              <span className={styles.blueText}>Cash Money</span> is an
+              exclusive award recognizing your exceptional financial
+              acheivements and smart money management.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Modal;
