@@ -3,6 +3,7 @@ import acheivement1 from "../../assets/acheivement1.png";
 import acheivement2 from "../../assets/acheivement2.png";
 import acheivement3 from "../../assets/acheivement3.png";
 import Modal from "./modal/Modal";
+import React, { useState } from "react";
 
 const AcheivementsHeader = () => {
   return (
@@ -13,16 +14,18 @@ const AcheivementsHeader = () => {
 };
 
 const AcheivementIcon1 = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div className={styles.icons}>
-      <button className={styles.resetButton}>
+      <button onClick={() => setShowModal(true)} className={styles.resetButton}>
         <img
           src={acheivement1}
           alt="An icon of a dollar sign on a blue background"
         />
       </button>
       <p className={styles.iconDescription}>Save $100</p>
-      <Modal />
+      {showModal && <Modal onClose={() => setShowModal(false)} />}
     </div>
   );
 };

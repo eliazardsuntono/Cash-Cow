@@ -2,12 +2,20 @@ import React from "react";
 import styles from "./Modal.module.css";
 import { X } from "lucide-react";
 import acheivement1 from "../../../assets/acheivement1.png";
+import { useRef } from "react";
 
-const Modal = () => {
+const Modal = ({ onClose }) => {
+  const modalRef = useRef();
+  const closeModal = (e) => {
+    if (modalRef.current === e.target) {
+      onClose();
+    }
+  };
+
   return (
-    <div className={styles.modal}>
+    <div ref={modalRef} onClick={closeModal} className={styles.modal}>
       <div className={styles.innerModal}>
-        <button className={styles.modalButton}>
+        <button onClick={onClose} className={styles.modalButton}>
           <X size={30}></X>
         </button>
         <div className={styles.background}>
