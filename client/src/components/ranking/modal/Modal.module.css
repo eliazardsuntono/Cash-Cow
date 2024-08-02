@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "nunito_sansbold";
+  src: url("../../../fonts/Nunito-Sans/boldregular/nunitosans-bold-webfont.woff2")
+      format("woff2"),
+    url("../../../fonts/Nunito-Sans/boldregular/nunitosans-bold-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nunito_sansregular";
+  src: url("../../../fonts/Nunito-Sans/boldregular/nunitosans-regular-webfont.woff2")
+      format("woff2"),
+    url("../../../fonts/Nunito-Sans/boldregular/nunitosans-regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .modal {
   position: fixed;
   inset: 0;
@@ -6,6 +26,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "nunito_sansregular";
+  font-size: 0.9rem;
 }
 
 .innerModal {
@@ -21,6 +43,11 @@
   place-self: end;
   border: none;
   background: none;
+}
+
+.modalHeader {
+  font-family: "nunito_sansbold", serif;
+  font-size: 1.3rem;
 }
 
 .background {
@@ -46,12 +73,15 @@
 
 .blueText {
   color: #5edec3;
+  font-family: "nunito_sansbold";
 }
 
 .darkBlueText {
   color: #615ede;
+  font-family: "nunito_sansbold";
 }
 
 .redText {
   color: #de5e5e;
+  font-family: "nunito_sansbold";
 }

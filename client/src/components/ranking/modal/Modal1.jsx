@@ -19,7 +19,7 @@ const Modal = ({ onClose }) => {
           <X size={30}></X>
         </button>
         <div className={styles.background}>
-          <h3>Acheivement</h3>
+          <h3 className={styles.modalHeader}>Acheivement</h3>
           <div className={styles.rowDescription}>
             <img
               src={acheivement1}

@@ -8,7 +8,7 @@ import star from "../../assets/leaderboard/star.png";
 const LeaderboardHeader = () => {
   return (
     <legend>
-      <h3>Leaderboard</h3>
+      <h3 className={styles.legendHeader}>Leaderboard</h3>
     </legend>
   );
 };

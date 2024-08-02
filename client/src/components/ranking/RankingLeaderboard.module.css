@@ -1,9 +1,31 @@
+@font-face {
+  font-family: "nunito_sansbold";
+  src: url("../../fonts/Nunito-Sans/boldregular/nunitosans-bold-webfont.woff2")
+      format("woff2"),
+    url("../../fonts/Nunito-Sans/boldregular/nunitosans-bold-webfont.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nunito_sansregular";
+  src: url("../../fonts/Nunito-Sans/boldregular/nunitosans-regular-webfont.woff2")
+      format("woff2"),
+    url("../../fonts/Nunito-Sans/boldregular/nunitosans-regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .container {
   max-width: 80%;
   border: 1px solid #aeaeae;
   margin: 0 10%;
   border-radius: 10px;
   margin-bottom: 125px;
+  font-family: "nunito_sansregular", serif;
+  font-size: 1.1rem;
 }
 
 .user {
@@ -13,6 +35,11 @@
   align-items: center;
   border: none;
   border-radius: 13px;
+}
+
+.legendHeader {
+  font-family: "nunito_sansbold", serif;
+  font-size: 1.3rem;
 }
 
 .userLeft {
