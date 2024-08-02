@@ -2,7 +2,9 @@ import styles from "./RankingAcheivements.module.css";
 import acheivement1 from "../../assets/acheivement1.png";
 import acheivement2 from "../../assets/acheivement2.png";
 import acheivement3 from "../../assets/acheivement3.png";
-import Modal from "./modal/Modal";
+import Modal1 from "./modal/Modal1";
+import Modal2 from "./modal/Modal2";
+import Modal3 from "./modal/Modal3";
 import React, { useState } from "react";
 
 const AcheivementsHeader = () => {
@@ -25,15 +27,17 @@ const AcheivementIcon1 = () => {
         />
       </button>
       <p className={styles.iconDescription}>Save $100</p>
-      {showModal && <Modal onClose={() => setShowModal(false)} />}
+      {showModal && <Modal1 onClose={() => setShowModal(false)} />}
     </div>
   );
 };
 
 const AcheivementIcon2 = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div className={styles.icons}>
-      <button className={styles.resetButton}>
+      <button onClick={() => setShowModal(true)} className={styles.resetButton}>
         <img
           src={acheivement2}
           alt="An icon of a trophy"
@@ -41,17 +45,21 @@ const AcheivementIcon2 = () => {
         />
       </button>
       <p className={styles.iconDescription}>Earn $50</p>
+      {showModal && <Modal2 onClose={() => setShowModal(false)} />}
     </div>
   );
 };
 
 const AcheivementIcon3 = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div className={styles.icons}>
-      <button className={styles.resetButton}>
+      <button onClick={() => setShowModal(true)} className={styles.resetButton}>
         <img src={acheivement3} alt="An icon of a burger" />
       </button>
       <p className={styles.iconDescription}>No takeout</p>
+      {showModal && <Modal3 onClose={() => setShowModal(false)} />}
     </div>
   );
 };
