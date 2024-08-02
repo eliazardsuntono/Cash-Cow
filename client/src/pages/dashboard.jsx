@@ -1,6 +1,9 @@
 import styles from "./dashboard.module.css";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Dashboardheader from "../components/Dashboard/Dashboardheader";
+import Balancecard from "../components/Dashboard/Balancecard";
+
 export default function Dashboard() {
   const [user, setUser] = useState();
   const [creditLoans, setCreditLoans] = useState();
@@ -32,11 +35,12 @@ export default function Dashboard() {
   }
 
   return (
-    <div className={styles.container}>
-      <div className={styles.titleContainer}>
-        <h1 className={styles.dashboardTitle}>Dashboard</h1>
+    <div>
+      <Dashboardheader />
+      <div className={styles.container}>
+        <div className={styles.seperator}></div>
+        <Balancecard />
       </div>
-      <div className={styles.balanceContainer}> hello</div>
     </div>
   );
 }
