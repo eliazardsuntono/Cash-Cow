@@ -9,8 +9,13 @@ export const Nav = styled.nav`
   justify-content: center;
   z-index: 12;
   width: 100vw;
-  /* Third Nav */
+  position: fixed; /* Sticky positioning to keep it at the bottom only when it's in view */
+  bottom: 0; /* Align it at the bottom of the container */
+  left: 0; /* Align it to the left edge */
+  /* Optional: Add box-shadow for better visibility */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
 `;
+
 
 export const NavLink = styled(Link)`
   color: #808080;

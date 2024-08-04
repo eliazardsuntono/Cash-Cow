@@ -27,7 +27,7 @@
 .container{
     margin: 28px 10% 0px;
     max-height: 250px;
-    max-width: 335px;
+    max-width: 330px;
     height:220px;
     width: 330px;
     display: flex;
@@ -36,7 +36,7 @@
     border: 2px solid #aeaeae;
     border-radius: 10px;
     padding-bottom: 36px;
-    gap: 0px;
+    gap: 4px;
 }
 
 .cashflowContainer{
@@ -90,4 +90,15 @@
 .lcontainer2{
     flex-direction: row;
     gap: 2px
+}
+
+.donutChartContainer{
+    align-items: center;
+    justify-content: center;
+}
+
+.pieChartExplanation {
+    font-family: 'nunito_sansbold', serif;
+    margin-block-start: 0;
+    color: #515151;
 }

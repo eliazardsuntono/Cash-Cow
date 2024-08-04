@@ -1,3 +1,27 @@
+@font-face {
+    font-family: "nunito_sansbold";
+    src: url("../../fonts/Nunito-Sans/boldregular/nunitosans-bold-webfont.woff2")
+        format("woff2"),
+      url("../../fonts/Nunito-Sans/boldregular/nunitosans-bold-webfont.woff")
+        format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "nunito_sansregular";
+    src: url("../../fonts/Nunito-Sans/boldregular/nunitosans-regular-webfont.woff2")
+        format("woff2"),
+      url("../../fonts/Nunito-Sans/boldregular/nunitosans-regular-webfont.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.temp {
+    border: none;
+}
+
 .container{
     padding-top: 25%;
     display: flex;
@@ -5,5 +29,19 @@
     top: 0;
     align-items: center;
     justify-content: center;
+    overflow-y: auto;
+    height: 100vh;
 }
 
+.editLoansButton {
+    margin-top: 20px;
+    font-family: 'nunito_sansbold', serif;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 360px;
+    height: 40px;
+    font-size: 15px;
+    margin-block-end: 15px;
+}

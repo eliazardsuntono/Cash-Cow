@@ -4,6 +4,8 @@ import axios from "axios";
 import Dashboardheader from '../components/Dashboard/Dashboardheader';
 import Balancecard from '../components/Dashboard/Balancecard';
 import Cashflow from '../components/Dashboard/Cashflow';
+import CollegeLoans from "../components/Dashboard/CollegeLoans";
+import CreditLoans from "../components/Dashboard/Credit";
 
 export default function Dashboard (){
     const [user, setUser] = useState();
@@ -38,6 +40,11 @@ export default function Dashboard (){
             <div className={styles.container}>
                 <Balancecard />
                 <Cashflow />
+                <div>
+                    <button className={styles.editLoansButton}>Edit Loans</button>
+                </div>
+                <CollegeLoans />
+                <CreditLoans />
             </div>
         </div>
     );

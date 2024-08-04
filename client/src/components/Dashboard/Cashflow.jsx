@@ -1,3 +1,4 @@
+import { Container } from 'lucide-react';
 import styles from './Cashflow.module.css';
 import React from 'react';
 import { Chart } from 'react-google-charts';
@@ -19,20 +20,21 @@ const options = {
 };
 
 const DonutChart = () => {
-  return (
-    <div>
-    <div style={{ display: 'flex', justifyContent: 'center' , height: '100px', flexDirection: 'column'}}>
-        <Chart
-            chartType="PieChart"
-            width="150px"
-            height="150px"
-            data={data}
-            options={options}
-        />
-        <p>You are in good standing</p>
-    </div>
-    </div>
-  );
+    return (
+        <div className={styles.donutChartContainer}>
+            <div
+                style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100px', flexDirection: 'column', marginBlockStart: '3em', backgroundColor: 'transparent',}}>
+                <Chart
+                    chartType="PieChart"
+                    width="150px"
+                    height="150px"
+                    data={data}
+                    options={options}
+                />
+                <p className={styles.pieChartExplanation}>You are in good standing</p>
+            </div>
+        </div>
+    );
 };
 
 

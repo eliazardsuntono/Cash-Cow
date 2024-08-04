@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "nunito_sansbold";
+    src: url("../../fonts/Nunito-Sans/boldregular/nunitosans-bold-webfont.woff2")
+        format("woff2"),
+      url("../../fonts/Nunito-Sans/boldregular/nunitosans-bold-webfont.woff")
+        format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "nunito_sansregular";
+    src: url("../../fonts/Nunito-Sans/boldregular/nunitosans-regular-webfont.woff2")
+        format("woff2"),
+      url("../../fonts/Nunito-Sans/boldregular/nunitosans-regular-webfont.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.title{
+    font-family: 'Poppins', sans-serif;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.container{
+    max-height: 400px;
+    max-width: 335px;
+    height: auto;
+    width: 335px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description{
+    font-family: "nunito_sansbold", serif;
+    font-size: 12px;
+    color: #B0B0B0;
+}
+
+.remainderAndProgress{
+    display: flex;
+    flex-direction: row;
+    margin-block-end: 0;
+}
+
+.remainingAmount{
+    font-family: "nunito_sansbold", serif;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.remainingTitle{
+    font-family: "nunito_sansregular", serif;
+    margin-block-start: 0;
+}
+
+.rc3{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5px;
+    margin-block-end: 0;
+}
+
+.paymentBar{
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    width: 200px;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-block-end: 0;
+    margin-left: 90px;
+
+}
+
+.total{
+    background-color: #4CAF50;
+    color: white;
+    font-family: 'nunito_sansbold', serif;
+    size: 10px;
+    font-size: 12px;
+    width: 150px;
+    border-radius: 5px;
+    padding: 2px 5px;
+    border-radius: 5px 0 0 5px;
+
+}
+
+.total2{
+    background-color: #CECECE;
+    color: black;
+    font-family: 'nunito_sansbold', serif;
+    font-size: 12px;
+    width: 100px;
+    padding: 2px 5px;
+}
+
+.paymentAmount{
+    font-family: "nunito_sansbold", serif;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.paymentTitle{
+    font-family: "nunito_sansregular", serif;
+    margin-block-start: 0;
+}
+
+.button{
+    margin-left: 240px;
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+    font-family: 'nunito_sansbold', serif;
+    background-color: #33914C;
+    color:#FFFFFF;
+    border: none;
+    border-radius: 10px;
+}
