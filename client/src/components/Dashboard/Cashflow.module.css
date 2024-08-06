@@ -28,7 +28,7 @@
     margin: 28px 10% 0px;
     max-height: 250px;
     max-width: 330px;
-    height:220px;
+    height:230px;
     width: 330px;
     display: flex;
     flex-direction: row;
@@ -101,4 +101,23 @@
     font-family: 'nunito_sansbold', serif;
     margin-block-start: 0;
     color: #515151;
+}
+
+.seeMoreButton {
+    font-family: 'nunito_sansbold', serif;
+    background-color: #33914C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-top: 40px;
+    margin-left: 90px;
+    height: 40px;
+    width: 100px;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
 }
