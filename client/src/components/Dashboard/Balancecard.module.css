@@ -79,9 +79,7 @@
     background-color: black;
     border-radius: 10px;
     width: 200px;
-}
-
-.buttonContent{
+    height: 50px;
     font-family: "nunito_sansbold", serif;
     font-size: 15px;
     color: white;

@@ -1,4 +1,6 @@
 import styles from './Credit.module.css';
+import React, { useState } from 'react';
+import Modal3 from './Modal/Modal3';
 
 const CreditHeader = () => {
     return (
@@ -9,6 +11,8 @@ const CreditHeader = () => {
 }
 
 export default function CreditLoans (){
+    const [showModal, setShowModal] = useState(false);
+
     return (
         <fieldset className={styles.container}>
             <CreditHeader />
@@ -33,7 +37,8 @@ export default function CreditLoans (){
                     </div>
                 </div>
             </div>
-            <button className={styles.button}>See more</button>
+            <button onClick={() => setShowModal(true)}  className={styles.button}>See more</button>
+            {showModal && <Modal3 onClose={() => setShowModal(false)} />}
         </fieldset>
     );
 }

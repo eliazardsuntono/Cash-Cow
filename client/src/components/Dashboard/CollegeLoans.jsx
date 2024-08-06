@@ -1,4 +1,6 @@
 import styles from './CollegeLoans.module.css';
+import React, { useState } from 'react';
+import Modal2 from './Modal/Modal2';
 
 const CollegeLoansHeader = () => {
   return (
@@ -9,6 +11,8 @@ const CollegeLoansHeader = () => {
 }
 
 export default function CollegeLoans() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <fieldset className={styles.container}>
       <CollegeLoansHeader />
@@ -33,7 +37,8 @@ export default function CollegeLoans() {
             </div>
         </div>
       </div>
-      <button className={styles.button}>See more</button>
+      <button onClick={() => setShowModal(true)}className={styles.button}>See more</button>
+      {showModal && <Modal2 onClose={() => setShowModal(false)} />}
     </fieldset>
   );
 }

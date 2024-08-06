@@ -1,0 +1,332 @@
+@font-face {
+    font-family: "nunito_sansbold";
+    src: url("../../../fonts/Nunito-Sans/boldregular/nunitosans-bold-webfont.woff2")
+        format("woff2"),
+      url("../../../fonts/Nunito-Sans/boldregular/nunitosans-bold-webfont.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "nunito_sansregular";
+    src: url("../../../fonts/Nunito-Sans/boldregular/nunitosans-regular-webfont.woff2")
+        format("woff2"),
+      url("../../../fonts/Nunito-Sans/boldregular/nunitosans-regular-webfont.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(174, 174, 174, 0.3);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+.modalButton{
+  z-index: 900;
+  border: none;
+  background: none;
+  color: #959595;
+  margin-left: 10px;
+  margin-top: 14px;
+}
+
+.outer{
+  display:flex;
+  flex-direction: row;
+}
+
+.c1{
+  background-color: white;
+  border-radius: 12px;
+  max-height: 300px;
+  max-width: 335px;
+  height: 250px;
+  width: 335px;
+  margin-block-start: 0;
+  border: 1px solid #AEAEAE;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.t1{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-weight: bold;
+  font-family: 'nunito_sansbold', serif;
+  margin-top: 8px;
+}
+
+.d1{
+  margin-block-start: 0;
+  margin-left: 15px;
+  color: #B0B0B0;
+  font-family: 'nunito_sansregular', serif;
+}
+
+.cashflowContainer{
+  margin-left: 15px;
+}
+
+.incomeTitle{
+  font-family: "nunito_sansbold", serif;
+  font-size: 14px;
+  color: #B0B0B0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.expensesTitle{
+  font-family: "nunito_sansbold", serif;
+  font-size: 14px;
+  color: #B0B0B0;
+  margin-block-end: 0;
+}
+
+.savingsTitle{
+  font-family: "nunito_sansbold", serif;
+  font-size: 14px;
+  color: #B0B0B0;
+  margin-block-end: 0;
+}
+
+.incomeAmount {
+  font-family: "nunito_sansbold", serif;
+  font-size: 16px;
+  margin-block-end: 0;
+}
+
+.expensesAmount{
+  font-family: "nunito_sansbold", serif;
+  font-size: 16px;
+  margin-block-end: 0;
+}
+
+.savingsAmount{
+  font-family: "nunito_sansbold", serif;
+  font-size: 16px;
+  margin-block-end: 0;
+}
+
+.subC1{
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+}
+
+.pieChartExplanation{
+  margin-block-end: 0em;
+  margin-block-start: 0em;
+  size: 10px;
+  font-family: 'nunito_sansregular', serif;
+}
+
+.c2 {
+  background-color: white;
+  border-radius: 12px;
+  max-height: 250px;
+  max-width: 335px;
+  height: 220px;
+  width: 335px;
+  margin-block-start: 12px;
+  border: 1px solid #AEAEAE;
+  display: flex;
+  flex-direction: column;
+}
+
+.t2{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-left: 15px;
+  font-weight: bold;
+  font-family: 'nunito_sansbold', serif;
+  margin-top: 8px;
+}
+
+.d2{
+  margin-block-start: 0;
+  margin-left: 15px;
+  font-family: 'nunito_sansregular', serif;
+  color: #B0B0B0;
+}
+
+.exSpendTitle{
+  font-family: "nunito_sansbold", serif;
+  font-size: 14px;
+  color: #B0B0B0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-left: 15px;
+}
+
+.exSpendAmount{
+  font-family: "nunito_sansbold", serif;
+  font-size: 16px;
+  margin-block-end: 0;
+  margin-left: 15px;
+}
+
+.exSpendAmount{
+  font-family: "nunito_sansbold", serif;
+  font-size: 16px;
+  margin-block-end: 0;
+  margin-left: 15px;
+}
+
+.paymentBar{
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+  border-radius: 5px;
+  height: 40px;
+  align-items: center;
+  
+}
+
+.total{
+  font-family: "nunito_sansregular", serif;
+  font-size: 13px;
+  margin-block-end: 0;
+  color: white;
+  background-color: #AA2626;
+  border-radius: 3px 0 0 3px;
+  width: 140px;
+  padding-left: 10px;
+}
+
+.total2{
+  padding-left: 10px;
+  font-family: "nunito_sansbold", serif;
+  font-size: 13px;
+  margin-block-end: 0;
+  border-radius: 0px 3px 3px 0px;
+  width: 140px;
+  background-color: #CECECE;
+}
+
+.c3{
+  margin-block-start: 12px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 12px;
+  height: 320px;
+}
+
+.subC3{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.t3{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-weight: bold;
+  font-family: 'nunito_sansbold', serif;
+  margin-top: 8px;
+}
+
+.d3{
+  margin-block-start: 0;
+  font-family: 'nunito_sansregular', serif;
+  color: #B0B0B0;
+}
+
+.exSpendTitle2{
+  font-family: "nunito_sansbold", serif;
+  font-size: 14px;
+  color: #B0B0B0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.exSpendAmount2{
+  font-family: "nunito_sansbold", serif;
+  font-size: 16px;
+  margin-block-end: 0;
+}
+
+.collegeLoansTitle, .creditLoansTitle, .etcTitle{
+  font-family: "nunito_sansbold", serif;
+  font-size: 14px;
+  color: #B0B0B0;
+  margin-block-end: 0;
+}
+
+.creditLoansAmount, .collegeLoansAmount, .etcAmount{
+  font-family: "nunito_sansbold", serif;
+  font-size: 16px;
+  margin-block-end: 0;
+}
+
+.donutContainer{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 200fpx;
+}
+
+.donutChartContainer2 {
+  margin-left: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.legend{
+  display: flex;
+  flex-direction: row;
+}
+
+.container2{
+ justify-content: center;
+ align-items: center;
+
+}
+
+.buttonContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+.editButton{
+  font-family: 'nunito_sansregular', serif;
+  color: white;
+  border: none;
+  background-color: black;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+}
+
+.viewButton{
+  font-family: 'nunito_sansregular', serif;
+  font-size: 10px;
+  color: #33914C;
+  border: none;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 5px;
+  text-decoration: underline;
+}
