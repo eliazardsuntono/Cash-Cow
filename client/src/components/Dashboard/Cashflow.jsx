@@ -2,6 +2,8 @@ import { Container } from 'lucide-react';
 import styles from './Cashflow.module.css';
 import React from 'react';
 import { Chart } from 'react-google-charts';
+import Modal1 from './Modal/Modal1';
+import { useState } from 'react';
 
 const data = [
   ['Type', 'Amount'],
@@ -84,20 +86,18 @@ const CashflowInfo = () => {
     )
 }
 
-const CashflowChart = () => {
-    return (
-        <div className={styles.chartContainer}>
-            placeholder for chart
-        </div>
-    )
-}
-
 export default function Cashflow(){
+    const [showModal, setShowModal] = useState(false);
+
     return(
         <fieldset className={styles.container}>
             <Balanceheader />
             <CashflowInfo />
-            <DonutChart />
+            <div className={styles.subcontainer}>
+                <DonutChart />
+                <button onClick={() => setShowModal(true)} className={styles.seeMoreButton}>See more</button>
+                {showModal && <Modal1 onClose={() => setShowModal(false)} />}
+            </div>
         </fieldset>
     )
 }
