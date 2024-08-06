@@ -15,11 +15,13 @@ const Modal = ({ onClose }) => {
   return (
     <div ref={modalRef} onClick={closeModal} className={styles.modal}>
       <div className={styles.innerModal}>
-        <button onClick={onClose} className={styles.modalButton}>
-          <X size={30}></X>
-        </button>
         <div className={styles.background}>
-          <h3 className={styles.modalHeader}>Acheivement</h3>
+          <div className={styles.makeRow}>
+            <h3 className={styles.modalHeader}>Achievement</h3>
+            <button onClick={onClose} className={styles.modalButton}>
+              <X size={30}></X>
+            </button>
+          </div>
           <div className={styles.rowDescription}>
             <img
               src={acheivement1}
@@ -29,7 +31,7 @@ const Modal = ({ onClose }) => {
             <p>
               <span className={styles.blueText}>Cash Money</span> is an
               exclusive award recognizing your exceptional financial
-              acheivements and smart money management.
+              achievements and smart money management.
             </p>
           </div>
         </div>
