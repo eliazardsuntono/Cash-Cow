@@ -1,4 +1,5 @@
 import styles from "./Balancecard.module.css";
+import React, { useState } from "react";
 
 const Balanceheader = () => {
   return (
@@ -26,8 +27,8 @@ const BalanceInfo = () => {
 const ViewButton = () => {
   return (
     <div className={styles.buttonContainer}>
-      <button className={styles.viewButton}>
-        <p className={styles.buttonContent}>View Bank Statements</p>
+      <button onClick={() => setShowModal(true)} className={styles.viewButton}>
+        View Bank Statements
       </button>
     </div>
   );
