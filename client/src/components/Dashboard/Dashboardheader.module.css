@@ -1,19 +1,19 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
-.container{
-    background-color: #33914C;
-    width: 100%;
-    height: 118px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    position:fixed;
-    z-index: 1000;
+.container {
+  background-color: #33914c;
+  width: 100%;
+  height: 118px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: fixed;
+  z-index: 1000;
 }
 
-.title{
-    color: #F9F9F9;
-    font-family: 'Poppins', sans-serif;
+.title {
+  color: #f9f9f9;
+  font-family: "Poppins", sans-serif;
 }
