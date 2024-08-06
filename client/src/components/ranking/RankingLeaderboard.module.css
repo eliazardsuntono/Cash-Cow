@@ -39,7 +39,7 @@
 
 .legendHeader {
   font-family: "nunito_sansbold", serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .userLeft {
@@ -66,17 +66,20 @@
   margin-top: -15px;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 4px;
 }
 
 .one {
   background-color: #f2fcfb;
+  border: 1px solid #aeaeae;
 }
 
 .two {
   background-color: #f2f2fc;
+  border: 1px solid #aeaeae;
 }
 
 .three {
   background-color: #fcf2f2;
+  border: 1px solid #aeaeae;
 }

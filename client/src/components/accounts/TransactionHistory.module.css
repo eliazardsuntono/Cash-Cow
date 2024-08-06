@@ -18,39 +18,38 @@
   font-style: normal;
 }
 
-.profileContainer {
-  margin: 28px 10% 0px;
-  margin-top: 118px;
-  max-height: 125px;
+.transactionContainer {
   max-width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: 0 10%;
   border: 1px solid #aeaeae;
   border-radius: 10px;
-  padding-bottom: 36px;
-
-  @media screen and (min-height: 853px) {
-    margin-top: 150px;
-  }
+  padding-inline-end: 0;
+  padding-inline-start: 0;
+  margin-bottom: 120px;
 }
 
-.progressContainer {
+.transactionHeader {
+  font-family: "nunito_sansbold";
+  font-size: 1.5rem;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.transactionsContainer {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.transaction {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 2.6875rem;
-}
-
-.header {
-  margin-left: 9px;
-  font-family: "nunito_sansbold", serif;
-  font-size: 1.5rem;
-  color: #000000;
-}
-
-.profileName {
-  font-family: "nunito_sansregular", serif;
-  color: #000000;
+  justify-content: space-between;
+  font-family: "nunito_sansregular", sans-serif;
   font-size: 1.1rem;
+  background-color: #d9d9d9;
+  height: 30px;
+  border-radius: 5px;
+  padding: 4px;
 }
