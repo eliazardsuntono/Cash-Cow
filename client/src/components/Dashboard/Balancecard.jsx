@@ -1,5 +1,6 @@
 import styles from './Balancecard.module.css';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Balanceheader = () => {
     return(
@@ -23,9 +24,10 @@ const BalanceInfo = () => {
 }
 
 const ViewButton = () => {
+    const navigate = useNavigate();
     return(
         <div className={styles.buttonContainer}>
-            <button onClick={() => setShowModal(true)} className={styles.viewButton}>
+            <button onClick={() => navigate('/balance')} className={styles.viewButton}>
                 View Bank Statements
             </button>
         </div>
