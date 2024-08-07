@@ -2,8 +2,4 @@
   display: flex;
   flex-direction: column;
   gap: 0px;
-
-  @media screen and (min-height: 853px) {
-    gap: 15px;
-  }
 }

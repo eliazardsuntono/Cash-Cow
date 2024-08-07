@@ -1,5 +1,6 @@
 import styles from "./RankingProfile.module.css";
 import rankingProgress from "../../assets/rankingprogress.png";
+import rankingBar from "../../assets/rankingBar.png";
 
 const ProfileHeader = () => {
   return (
@@ -11,19 +12,31 @@ const ProfileHeader = () => {
 
 const ProfilePicture = () => {
   return (
-    <div>
+    <div className={styles.rightProfile}>
       <img
         src={rankingProgress}
         alt="An image of a circular progress bar filled up 75%"
       />
+      <h4 className={styles.profileHeader}>Rank: 54</h4>
     </div>
   );
 };
 
-const ProfileName = () => {
+const ProfileStats = () => {
   return (
-    <div>
-      <h3 className={styles.profileName}>Aashay Gupte</h3>
+    <div className={styles.statsContainer}>
+      <div className={styles.statsTextContainer}>
+        <h5 className={styles.statsHeader}>Aashay Gupte</h5>
+        <div className={styles.text}>
+          <p className={styles.statsText}>Acheivements: 3</p>
+          <p className={styles.statsText}>Account ID: #591228</p>
+        </div>
+      </div>
+      <img
+        src={rankingBar}
+        alt="An image of an icon bar filled 30%"
+        class={styles.statsProgress}
+      />
     </div>
   );
 };
@@ -34,7 +47,7 @@ const RankingProfile = () => {
       <ProfileHeader />
       <div className={styles.progressContainer}>
         <ProfilePicture />
-        <ProfileName />
+        <ProfileStats />
       </div>
     </fieldset>
   );
