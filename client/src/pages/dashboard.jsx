@@ -6,8 +6,10 @@ import Balancecard from '../components/Dashboard/Balancecard';
 import Cashflow from '../components/Dashboard/Cashflow';
 import CollegeLoans from "../components/Dashboard/CollegeLoans";
 import CreditLoans from "../components/Dashboard/Credit";
+import { useNavigate } from "react-router-dom";
 
 export default function Dashboard (){
+    const navigate = useNavigate();
     const [user, setUser] = useState();
     const [creditLoans, setCreditLoans] = useState();
     const [studentLoansLeft, setStudentLoansLeft] = useState();
@@ -21,6 +23,7 @@ export default function Dashboard (){
     }, []);
 
     function getUserInfo(){
+
         axios.get("http://localhost:8000/", {crossdomain: true}).then(response => {
             setUser(response.data.user);
             setCreditLoans(response.data.creditLoans);
@@ -41,7 +44,7 @@ export default function Dashboard (){
                 <Balancecard />
                 <Cashflow />
                 <div>
-                    <button className={styles.editLoansButton}>Edit Loans</button>
+                    <button onClick={() => navigate('Loans')}className={styles.editLoansButton}>Edit Loans</button>
                 </div>
                 <CollegeLoans />
                 <CreditLoans />
