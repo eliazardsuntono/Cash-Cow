@@ -11,6 +11,7 @@ import Dashboard from "./pages/dashboard";
 import Account from "./pages/account";
 import Ranking from "./pages/rankings";
 import Balance from "./pages/balance";
+import Loans from "./pages/loans";
 
 axios.defaults.baseURL ="http://localhost:8000"
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/rankings" element={<Ranking />} />
           <Route path="/account" element={<Account />} />
           <Route path="/balance" element={<Balance />} />
+          <Route path="/loans" element={<Loans />} />
         </Routes>
       </Router>
     </div>

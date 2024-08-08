@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "nunito_sansbold";
+    src: url("../../fonts/Nunito-Sans/boldregular/nunitosans-bold-webfont.woff2")
+        format("woff2"),
+      url("../../fonts/Nunito-Sans/boldregular/nunitosans-bold-webfont.woff")
+        format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "nunito_sansregular";
+    src: url("../../fonts/Nunito-Sans/boldregular/nunitosans-regular-webfont.woff2")
+        format("woff2"),
+      url("../../fonts/Nunito-Sans/boldregular/nunitosans-regular-webfont.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.subcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar{
+    margin-top: 20px;
+    margin-left: 20px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    width: 125px;
+}
+
+.savingsAmount{
+    background-color: #33914C;
+    color: white;
+    font-family: 'nunito_sansregular', serif;
+    padding-left: 40px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.spendingsAmount {
+    background-color: #15662B;
+    color: white;
+    font-family: 'nunito_sansregular', serif;
+    padding-left: 39px;
+}
+
+.collegeAmount{
+    background-color: #C3AB29;
+    color: white;
+    font-family: 'nunito_sansregular', serif;
+    padding-left: 40px;
+}
+
+.creditAmount{
+    background-color: #A43737;
+    color: white;
+    font-family: 'nunito_sansregular', serif;
+    padding-left: 40px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.legend {
+    margin-left : 20px;
+    margin-top: 20px;
+    height: 300px;
+    border-radius: 12px;
+}
+
+.budgetLegend{
+    display: flex;
+    flex-direction: column;
+    font-family: 'nunito_sansregular', serif;
+}
+
+.c1 {
+    direction: flex;
+    flex-direction: row;
+}
+
+.t1{
+    font-family: 'nunito_sansbold', serif;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.t2{
+    font-family: 'nunito_sansbold', serif;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.t3{
+    font-family: 'nunito_sansbold', serif;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.t4{
+    font-family: 'nunito_sansregular', serif;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.inputContainer{
+    margin-block-start: 0;
+    width: 50%;
+}
+
+.confirm{
+    color: white;
+    background-color: black;
+    border: none;
+    height: 50px;
+    width: 210px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 12px;
+    font-family: 'nunito_sansregular' , serif;
+    font-size: 17px;
+}
