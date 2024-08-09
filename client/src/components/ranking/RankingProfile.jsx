@@ -26,7 +26,7 @@ const ProfileStats = () => {
   return (
     <div className={styles.statsContainer}>
       <div className={styles.statsTextContainer}>
-        <h5 className={styles.statsHeader}>Aashay Gupte</h5>
+        <h5 className={styles.statsHeader}>Leo Harper</h5>
         <div className={styles.text}>
           <p className={styles.statsText}>Acheivements: 3</p>
           <p className={styles.statsText}>Account ID: #591228</p>
